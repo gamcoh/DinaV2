@@ -98,7 +98,7 @@ def main(args):
         gen_test = gen.flow_video_from_dataframe(data.test_df, path_vid, shuffle=False, path_classes=path_labels, class_mode=None, x_col='video_id', target_size=target_size, batch_size=batch_size, nb_frames=nb_frames, skip=skip, has_ext=True)
 
         #Building model
-        net = Resnet3DBuilder.build_resnet_101(inp_shape, nb_classes)      
+        net = Resnet3DBuilder.build_resnet_101(inp_shape, nb_classes)  
 
         if(path_weights != "None"):
             print("Loading weights from : " + path_weights)
